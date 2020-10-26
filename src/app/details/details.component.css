@@ -1,5 +1,5 @@
 .contentDiv {
-  width: 60%;
+  width: 50%;
   height: 90%;
   background-color: #f2f2f2;
   border-left: 2px solid gray;
@@ -14,6 +14,7 @@
   margin: auto;
   height: 40%;
   margin-top: 5%;
+  margin-bottom: 5%;
   background-color: black;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
     0 15px 20px 0 rgba(0, 0, 0, 0.19);
@@ -32,6 +33,7 @@
 .textDiv {
   width: 60%;
   margin: auto;
+  text-align: justify;
 }
 .text {
   font-size: 15px;
