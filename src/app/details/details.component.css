@@ -6,7 +6,7 @@
   border-top: 2px solid gray;
   margin: auto;
   border-radius: 10%;
-  margin-top: 10%;
+  margin-top: 3%;
   text-align: center;
 }
 .pictureDiv {
@@ -43,7 +43,7 @@
   margin-top: 1%;
   width: 15%;
   height: 5%;
-  background-color: gray;
+  background-color: #004e7c;
   border-radius: 10%;
   color: white;
   font-weight: bold;
