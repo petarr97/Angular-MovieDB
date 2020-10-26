@@ -1,0 +1,26 @@
+<div class="contentDiv">
+  <button [routerLink]="['/']" class="backButton">Back</button>
+  <div class="pictureDiv">
+    <img
+      *ngIf="!hasVideo"
+      class="poster"
+      data-sizes="auto"
+      data-src="https://image.tmdb.org/t/p/w185_and_h278_bestv2{{ path }}"
+      onError="this.onerror=null;this.src='../../assets/pictures/error.png';"
+    />
+    <iframe
+      *ngIf="hasVideo"
+      class="poster"
+      [src]="url"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      onError="this.onerror=null;this.src='../../assets/pictures/error.png';"
+    ></iframe>
+  </div>
+  <label class="title">{{ title }}</label>
+  <div class="textDiv">
+    <label style="font-size: 20px">Overview:</label><br />
+    <label class="text">{{ overview }}</label>
+  </div>
+</div>

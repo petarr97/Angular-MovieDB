@@ -1,0 +1,71 @@
+<div class="buttonsDiv">
+  <button
+    class="btn"
+    (click)="clickedMovies()"
+    [ngStyle]="{
+      'background-color': propColor
+    }"
+  >
+    Movies
+  </button>
+  <button
+    class="btn"
+    (click)="clickedTvShows()"
+    [ngStyle]="{
+      'background-color': propColor1
+    }"
+  >
+    TV
+  </button>
+</div>
+<div class="searchDiv">
+  <input
+    type="text"
+    [(ngModel)]="searchModel"
+    id="search"
+    (input)="search($event.target.value)"
+  />
+</div>
+<div *ngIf="type" class="viewComponentDiv">
+  <div
+    class="movie"
+    *ngFor="let post of postsSub | slice: 0:count"
+    [routerLink]="['/showDetails', post.id, 'movie']"
+  >
+    <img
+      class="poster"
+      data-sizes="auto"
+      data-src="https://image.tmdb.org/t/p/w185_and_h278_bestv2{{
+        post.poster_path
+      }}"
+      onError="this.onerror=null;this.src='../../assets/pictures/error.png';"
+    />
+    <br />
+    <label class="movieTitle">{{ post.original_title }}</label>
+    <br /><label style="font-weight: bold; font-size: medium"
+      >Vote: {{ post.vote_average }}</label
+    >
+    <br />
+  </div>
+</div>
+<div *ngIf="!type" class="viewComponentDiv">
+  <div
+    class="movie"
+    *ngFor="let post of postSub1 | slice: 0:count"
+    [routerLink]="['/showDetails', post.id, 'tv']"
+  >
+    <img
+      class="poster"
+      data-sizes="auto"
+      data-src="https://image.tmdb.org/t/p/w185_and_h278_bestv2{{
+        post.poster_path
+      }}"
+      onError="this.onerror=null;this.src='../../assets/pictures/error.png';"
+    /><br />
+    <label class="movieTitle">{{ post.original_name }}</label>
+    <br /><label style="font-weight: bold; font-size: medium"
+      >Vote: {{ post.vote_average }}</label
+    >
+    <br />
+  </div>
+</div>

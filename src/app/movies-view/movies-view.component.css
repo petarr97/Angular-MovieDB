@@ -1,0 +1,76 @@
+.viewComponentDiv {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 1%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.buttonsDiv {
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 15%;
+  height: 40px;
+}
+.btn {
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+  margin-right: 5px;
+  border-radius: 10%;
+  color: white;
+  font-weight: bold;
+}
+.searchDiv {
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+  height: 5%;
+  text-align: center;
+  font-size: 15px;
+}
+#search {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  border: 2px solid black;
+}
+
+.movie {
+  width: 35%;
+  height: 45%;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 2px solid silver;
+  align-items: center;
+  text-align: center;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.poster {
+  margin: auto;
+  height: 80%;
+  width: 100%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.movieTitle {
+  font-weight: bold;
+  font-size: 15pt;
+}
+.details {
+  margin: auto;
+  border-radius: 10%;
+  background-color: #008cba;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+  height: 8%;
+  font-size: 15px;
+}
+.movie,
+.btn:hover {
+  cursor: pointer;
+}
