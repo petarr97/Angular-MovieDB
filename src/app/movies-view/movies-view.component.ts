@@ -62,7 +62,6 @@ export class MoviesViewComponent implements OnInit {
     if (this.searchModel.length > 3) this.search(this.searchModel);
     else {
       this.tvService.getTvShowS().then((data) => {
-        console.log(data);
         this.postSub1 = data;
       });
     }
@@ -78,11 +77,9 @@ export class MoviesViewComponent implements OnInit {
       setTimeout(() => {
         if (this.type) {
           this.searchService.returnMovies().then((data) => {
-            console.log(data);
             this.postsSub = data;
             this.count = this.postsSub.length;
           });
-          console.log(this.postsSub.length);
         } else {
           this.searchService.returnTv().then((data) => {
             this.postSub1 = data;
