@@ -5,9 +5,10 @@
   border-left: 2px solid gray;
   border-top: 2px solid gray;
   margin: auto;
-  border-radius: 10%;
   margin-top: 3%;
+  border-radius: 5%;
   text-align: center;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 1), 0 15px 20px 0 rgba(0, 0, 0, 1);
 }
 .pictureDiv {
   width: 60%;
