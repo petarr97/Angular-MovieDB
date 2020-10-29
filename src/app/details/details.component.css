@@ -44,18 +44,25 @@
   margin-top: 1%;
   width: 15%;
   height: 5%;
-  background-color: #004e7c;
   border-radius: 10%;
-  color: white;
+  color: black;
   font-weight: bold;
+  background: linear-gradient(to right, #004e7c, #004e7c);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1s 0s;
+  background-color: whitesmoke;
 }
 .backButton:hover {
+  background-size: 100% 100%;
+  color: wheat;
   cursor: pointer;
 }
 .poster:hover {
   transform: scale(1.1);
   border-radius: 3%;
 }
+
 @media only screen and (max-width: 900px) {
   .contentDiv {
     width: 80%;
